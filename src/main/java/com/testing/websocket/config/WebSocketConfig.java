@@ -17,7 +17,7 @@ import org.springframework.web.socket.messaging.SessionDisconnectEvent;
 @EnableWebSocketMessageBroker
 public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
 	private static final Logger LOGGER = LoggerFactory.getLogger(WebSocketConfig.class);
-	
+
 	@Value("${spring.rabbitmq.username}") private String userName;
 	@Value("${spring.rabbitmq.password}") private String password;
 	@Value("${spring.rabbitmq.host}")     private String host;
